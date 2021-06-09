@@ -37,6 +37,7 @@ function setup(){
 function draw(){
     ground.display()
     background("blue")
+    Engine.update(engine)
     Stand1.display()
     //level two
     block8.display()
@@ -63,3 +64,10 @@ function mouseDragged(){
 function mouseReleased(){
     slingShot.fly()
 }
+
+img=loadImage("Block.png/.vscode")
+image(img,0,0);
+tint(255,126)
+image(img,50,0)
+
+
